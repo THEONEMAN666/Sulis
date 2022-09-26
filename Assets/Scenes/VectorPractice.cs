@@ -29,7 +29,7 @@ public class VectorPractice : MonoBehaviour
         Vector3 vSum = v1 + v2; // (4, 13, 12)
         Vector3 vSum2 = v1 + v3;
 
-        Vector3 vProduct = v1 * f1; //( 3, 18, 129
+        Vector3 vProduct = v1 * f1; //( 3, 18, 12
 
         float m = vProduct.magnitude;
         Debug.Log(m);

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 class HaziFeladat : MonoBehaviour
 {
     [SerializeField] int number;
@@ -18,3 +19,25 @@ class HaziFeladat : MonoBehaviour
 
 
 }
+
+public class HaziFeladat2 : MonoBehaviour
+{
+               //A 1/es feladat
+    
+    [SerializeField] float a;
+    [SerializeField] float b;
+
+    [SerializeField] float summa;       
+    [SerializeField] float difference;  
+    [SerializeField] float product;     
+    [SerializeField] float quotient;
+              void OnValidate()
+    {
+      summa = a + b;
+      difference = a - b;
+      product = a * b;
+      quotient = a / b;
+    }
+ }
+
+
