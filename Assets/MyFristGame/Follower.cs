@@ -29,7 +29,11 @@ class Follower : MonoBehaviour
         float maxStep = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(selfPoint, targetPoint, maxStep);
 
-        transform.rotation = Quaternion.LookRotation(targetPoint -selfPoint);
+        if (targetPoint != selfPoint)
+        {
+
+            transform.rotation = Quaternion.LookRotation(targetPoint - selfPoint);
+        }
 
     }
 

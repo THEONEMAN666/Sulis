@@ -29,7 +29,9 @@ public class PUSKA : MonoBehaviour
         int Mathf; //Minimum és maximum meghatározása --> min = Mathf.Min(a, b, c, d, e);
         float round, roundUp, roundDown; // Kerekitések 
         bool muveletjelek; //Egyenlõség ==,Egyenlõtlenség !=, ÉS &&,VAGY ||,Logikai kizáró ^,
-
+        
+       
+        
 
 
         // SZERKEZETEK

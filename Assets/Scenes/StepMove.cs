@@ -1,0 +1,29 @@
+using UnityEngine;
+public class StepMove : MonoBehaviour
+{
+    private void Update()
+    {
+        bool up = Input.GetKeyDown(KeyCode.UpArrow);
+        bool down = Input.GetKeyDown(KeyCode.DownArrow);
+        bool right = Input.GetKeyDown(KeyCode.RightArrow);
+        bool left = Input.GetKeyDown(KeyCode.LeftArrow);
+
+
+        if (up)
+
+            transform.position += new Vector3(0, 1, 0);
+        if (down)
+            transform.position += Vector3.down;
+
+        if (right)
+            transform.position += Vector3.right;
+
+        if (left)
+            transform.position += Vector3.left;
+
+
+    }
+
+
+
+}
