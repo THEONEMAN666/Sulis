@@ -4,7 +4,7 @@ class Follower : MonoBehaviour
 {
     [SerializeField] Transform target;
     [SerializeField] float speed = 2;
-
+    [SerializeField] AnimationCurve speedOverDistance;
      void Update()
     {
         Vector3 targetPoint = target.position;
@@ -26,6 +26,8 @@ class Follower : MonoBehaviour
 
         transform.position += velocity * Time.deltaTime;
         */
+        float distance = Vector3.Distance(transform.position, target.position);
+        float speed = speedOverDistance.Evaluate(distance); // Változó sebesség a közeledés függvényében a grafikonon
         float maxStep = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(selfPoint, targetPoint, maxStep);
 

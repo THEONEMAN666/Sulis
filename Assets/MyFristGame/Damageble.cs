@@ -5,7 +5,6 @@ public class Damageble : MonoBehaviour
 {
     [SerializeField] int health;
     [SerializeField] TMP_Text healthText;
-
     [SerializeField] Behaviour behaviour;
 
 
