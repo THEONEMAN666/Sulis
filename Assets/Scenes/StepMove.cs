@@ -1,5 +1,5 @@
 using UnityEngine;
-public class StepMove : MonoBehaviour
+ class StepMove : MonoBehaviour
 {
     private void Update()
     {
@@ -7,6 +7,9 @@ public class StepMove : MonoBehaviour
         bool down = Input.GetKeyDown(KeyCode.DownArrow);
         bool right = Input.GetKeyDown(KeyCode.RightArrow);
         bool left = Input.GetKeyDown(KeyCode.LeftArrow);
+  
+
+ 
 
 
         if (up)
@@ -20,6 +23,13 @@ public class StepMove : MonoBehaviour
 
         if (left)
             transform.position += Vector3.left;
+
+       
+
+
+
+
+
 
 
     }
