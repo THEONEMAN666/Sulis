@@ -29,7 +29,7 @@ public class CharacterMover2D : MonoBehaviour
     {
       bool jumpPress =  Input.GetKeyDown(KeyCode.Space);
 
-        if (jumpPress && (onGround || jumpCounts > 0 ))
+        if (jumpPress && jumpCounts > 0 )
         {
             Vector2 v = rigidbody.velocity;
             v.y = 0;
@@ -73,15 +73,17 @@ public class CharacterMover2D : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        int layer = collision.gameObject.layer;
+        int layer = collision.gameObject.layer; // Lekerem a leayeret annak amivel ütköztem
 
-        if (groundLayer == (groundLayer | (1 << layer)))
+        if (groundLayer.Contains( layer))  // Ha tartalmazza a groundLayer mask a layert
         {
             onGround = true;
-            jumpCounts = airJump * 1;
+            jumpCounts = 0;   // ez legyen 0 ha olyan helyet csinálsz ahol nem akarod hogy legyen ugrás
 
         }
 
+        if (canJumpLayer.Contains(layer))
+            jumpCounts = airJump + 1;
 
 
 
