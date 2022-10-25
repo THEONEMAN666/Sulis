@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MyFristGame/MyFirstGame.unity
+    guid: 59a6390e171f0544999c30a48c2d2339
   m_configObjects: {}

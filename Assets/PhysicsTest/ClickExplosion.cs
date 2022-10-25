@@ -6,6 +6,7 @@ class ClickExplosion : MonoBehaviour
 // ctrl+k+d = automatikus igazítás
 // ctrl+rr = mindent átnevez egyszerre
 // for ciklus alapkoncepció kiírása tab*2
+// ctrl+space = metódus ajánlatok kérése
 {
     [SerializeField] float _maxForce;
     [SerializeField] float _range;
