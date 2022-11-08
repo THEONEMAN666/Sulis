@@ -4,6 +4,7 @@ public class PlayerMover : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float angularSpeed = 180;
+    [SerializeField] Animator animator;
     
 
      void Update()
@@ -47,7 +48,12 @@ public class PlayerMover : MonoBehaviour
 
         transform.position += velocity * Time.deltaTime;
 
-        if (velocity != Vector3.zero)
+        bool isRuning = velocity != Vector3.zero;
+
+        animator.SetBool("isRunning", isRuning);
+
+
+        if (isRuning)
         {
           Quaternion targetRot = Quaternion.LookRotation(velocity);
 
@@ -57,6 +63,11 @@ public class PlayerMover : MonoBehaviour
                 angularSpeed * Time.deltaTime);
         }
 
+    }
+
+    public void StepDown()
+    {
+       
     }
 
 }

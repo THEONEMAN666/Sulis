@@ -8,10 +8,26 @@ using UnityEngine;
     [SerializeField] float _destructiontime;
 
     float startTime;
+
+    [SerializeField] GameObject go;
+    [SerializeField] MonoBehaviour mb;
     
-    void Start()
+    void Test()
     {
         startTime = Time.time;
+
+        go.SetActive(true);// GameObject be
+
+        go.SetActive(false); // GameObject ki
+
+        Debug.Log("Be van kapcsolva a GameObject és minden szülõ:" + go.activeInHierarchy);
+        Debug.Log("Be van kapcsolva a GameObject és minden szülõ:" + go.activeSelf);
+
+        mb.enabled = false;// komponensek ki
+
+        mb.enabled = true;// komponensek be
+
+        Debug.Log("Be van kapcsolva:" + mb.enabled);
     }
 
     
@@ -24,4 +40,6 @@ using UnityEngine;
             Destroy(gameObject);
         }
     }
+
+     
 }

@@ -442,14 +442,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28930871}
-  m_LocalRotation: {x: -0.011974977, y: -0.6025003, z: 0.79801226, w: 0.0051453696}
-  m_LocalPosition: {x: 0.43468443, y: -0.6384825, z: -0.030999996}
+  m_LocalRotation: {x: -0.0107266, y: -0.43346682, z: 0.90107524, w: 0.0074038357}
+  m_LocalPosition: {x: 0.471, y: -0.636, z: -0.006}
   m_LocalScale: {x: 0.26813525, y: 0.2776171, z: 0.3761547}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1623006623}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 105.95401, y: -185.284, z: -4.725006}
+  m_LocalEulerAnglesHint: {x: 128.647, y: -182.363, z: -2.078003}
 --- !u!136 &28930873
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1073,6 +1073,7 @@ MonoBehaviour:
   health: 5
   healthText: {fileID: 0}
   behaviour: {fileID: 0}
+  _invicibleFrames: 1
 --- !u!54 &72383661
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18731,7 +18732,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597489106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -139.1, y: 1.5, z: -230.6}
+  m_LocalPosition: {x: -139.83, y: 1.5, z: -230.4}
   m_LocalScale: {x: 0.5, y: 3.5, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19427,6 +19428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 13
   angularSpeed: 150
+  animator: {fileID: 0}
 --- !u!54 &1623006625
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19472,6 +19474,7 @@ MonoBehaviour:
   health: 10
   healthText: {fileID: 1992713351}
   behaviour: {fileID: 1623006624}
+  _invicibleFrames: 1
 --- !u!114 &1623006628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20626,7 +20629,7 @@ GameObject:
   - component: {fileID: 1761685047}
   - component: {fileID: 1761685046}
   m_Layer: 0
-  m_Name: Legs 2
+  m_Name: Fegyver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20639,14 +20642,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761685044}
-  m_LocalRotation: {x: -0.011974977, y: -0.6025003, z: 0.79801226, w: 0.0051453696}
-  m_LocalPosition: {x: -0.43468443, y: -0.60456306, z: -0.041999996}
+  m_LocalRotation: {x: 0.015096873, y: -0.3578702, z: 0.93284523, w: 0.03874226}
+  m_LocalPosition: {x: -0.419, y: -0.637, z: 0.037}
   m_LocalScale: {x: 0.26813525, y: 0.2776171, z: 0.3761547}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1623006623}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 105.95401, y: -185.284, z: -4.725006}
+  m_LocalEulerAnglesHint: {x: 138.022, y: -179.966, z: -4.742981}
 --- !u!136 &1761685046
 CapsuleCollider:
   m_ObjectHideFlags: 0
