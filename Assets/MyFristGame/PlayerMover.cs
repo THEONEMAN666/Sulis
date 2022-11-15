@@ -4,6 +4,7 @@ public class PlayerMover : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float angularSpeed = 180;
+    [SerializeField] Transform cameraTransform;
     [SerializeField] Animator animator;
     
 
@@ -29,7 +30,16 @@ public class PlayerMover : MonoBehaviour
         if (down)
             y += -1;
 
-        Vector3 velocity = new Vector3(x, 0, y);
+        Vector3 rightDir = cameraTransform.right;
+        Vector3 forwardDir = cameraTransform.forward;
+        rightDir.y = 0;
+        forwardDir.y = 0;
+
+        Vector3 velocity = x * rightDir.normalized + y * forwardDir;
+
+
+
+        // Vector3 velocity = new Vector3(x, 0, y);
         velocity.Normalize();
         velocity *= speed;
 
